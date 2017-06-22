@@ -68,7 +68,7 @@ public class ShoppingButton extends View {
         mCenterCircleColor = a.getColor(R.styleable.ShoppingButton_CenterCircleColor, Color.GRAY);
         mCircleColor = a.getColor(R.styleable.ShoppingButton_CircleColor, Color.GRAY);
         mRadius = a.getInt(R.styleable.ShoppingButton_radius, 10);
-        mDistance =  a.getInt(R.styleable.ShoppingButton_distance, mRadius * 5);
+        mDistance = a.getInt(R.styleable.ShoppingButton_distance, mRadius * 5);
         a.recycle();
 
 
@@ -148,6 +148,10 @@ public class ShoppingButton extends View {
         mCirclePaint1.setShadowLayer(1, 0, 0, Color.DKGRAY);//设置阴影
         invalidate();
     }
+    //获取数字
+    public int getTextNum() {
+        return num;
+    }
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
@@ -199,4 +203,8 @@ public class ShoppingButton extends View {
         }
         Log.d("widthSize", "widthSize: " + widthSize + "heightSize:" + heightSize);
     }
+
+
+
+
 }
