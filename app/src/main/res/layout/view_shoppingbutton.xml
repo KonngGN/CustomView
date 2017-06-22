@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.kjn.customview.ShoppingButton
+        android:layout_gravity="center"
+        app:radius="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.kjn.customview.ShoppingButton
+        android:layout_gravity="center"
+        app:radius="10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <com.kjn.customview.ShoppingButton
+        android:layout_gravity="center"
+        app:radius="20"
+        app:CircleColor="#00ff00"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"/>
+
+    <com.kjn.customview.ShoppingButton
+        android:layout_gravity="center"
+        app:radius="30"
+        app:CenterCircleColor="#ff0000"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"/>
+
+    <com.kjn.customview.ShoppingButton
+        android:layout_gravity="center"
+        app:radius="60"
+        android:layout_width="match_parent"
+        app:textColor="@color/colorAccent"
+        android:layout_height="wrap_content"/>
+    <com.kjn.customview.ShoppingButton
+        android:layout_gravity="center"
+        app:radius="100"
+        app:textColor="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        app:CenterCircleColor="#ff0000"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
